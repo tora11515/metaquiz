@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+// Write any include statements here
+
+string getWrongAnswers(int N, string C) {
+  // Write your code here
+  int i = 0, j = C.length();
+  while(i<j)
+  {
+    if(C[i]=='A')
+      C[i] = 'B';
+    else
+      C[i]='A';
+    i++;
+  }
+  return C;
+}
